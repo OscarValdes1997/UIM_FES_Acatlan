@@ -1,0 +1,100 @@
+@import 'tailwindcss';
+
+:root {
+    /* Palette - Mexican Flag & Dark Theme */
+    --color-unam-blue: #1E3C70;
+    --color-unam-yellow: #BB8800;
+    --color-unam-cards: #BB8800;
+    --color-unam-white: #F7F2EF;
+    --color-unam-black: #212529;
+
+}
+
+
+body {
+    font-family: 'Instrument Sans', sans-serif;
+    background: linear-gradient(135deg, var(--color-unam-white) 0%, #E8DCC0 100%);
+    color: var(--color-unam-blue);
+    box-shadow: var(--color-unam-black);
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(30, 60, 112, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(187, 136, 0, 0.05) 0%, transparent 50%),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231E3C70' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: auto, auto, 60px 60px;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Ccircle cx='100' cy='100' r='90' fill='%231E3C70' fill-opacity='0.02'/%3E%3Cpath d='M100 20c44.183 0 80 35.817 80 80s-35.817 80-80 80-80-35.817-80-80 35.817-80 80-80zm0 10c-38.598 0-70 31.402-70 70s31.402 70 70 70 70-31.402 70-70-31.402-70-70-70z' fill='%231E3C70' fill-opacity='0.03'/%3E%3Cpath d='M100 40c33.137 0 60 26.863 60 60s-26.863 60-60 60-60-26.863-60-60 26.863-60 60-60zm0 10c-27.57 0-50 22.43-50 50s22.43 50 50 50 50-22.43 50-50-22.43-50-50-50z' fill='%23BB8800' fill-opacity='0.02'/%3E%3Ctext x='100' y='110' font-family='Arial, sans-serif' font-size='24' font-weight='bold' text-anchor='middle' fill='%231E3C70' fill-opacity='0.05'%3EUNAM%3C/text%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.body-login {
+    font-family: 'Instrument Sans', sans-serif;
+    background-color: var(--color-unam-blue);
+    color: var(--color-unam-yellow);
+    box-shadow: var(--color-unam-black);
+}
+.body-login-card{
+    background-color: var(--color-unam-white);
+}
+
+.bg-theme-gradient {
+    background: var(--color-unam-blue);
+}
+.bg-theme-gold {
+    background: var(--color-unam-cards);
+}
+
+.text-gradient-metallic {
+    background: linear-gradient(to right, #2b2b2b, #626262);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.color-unam-blue {
+    color: var(--color-unam-blue);
+}
+
+.color-unam-yellow {
+    color: var(--color-unam-yellow);
+}
+
+.color-unam-white{
+    color: var(--color-unam-red);
+}
+.color-unam-black{
+    color: var(--color-unam-black);
+}
+
+.from-yellow-900{
+    background: var(--color-unam-cards);
+}
+
+.from-blue-900{
+    background: var(--color-unam-blue);
+}
+.from-black-900{
+    background: var(--color-unam-black);
+}
+
+.card-theme{
+    color: var(--color-unam-blue);
+}
+.text-theme{
+    color: var(--color-unam-blue);
+}
