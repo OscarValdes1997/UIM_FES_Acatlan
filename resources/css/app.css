@@ -1,13 +1,14 @@
 @import 'tailwindcss';
 
-:root {
-    /* Palette - Mexican Flag & Dark Theme */
+@theme {
+    /* UNAM Brand Colors */
     --color-unam-blue: #1E3C70;
-    --color-unam-yellow: #BB8800;
-    --color-unam-cards: #BB8800;
-    --color-unam-white: #F7F2EF;
+    --color-unam-gold: #BB8800;
+    --color-unam-white: #FDFDFC;
     --color-unam-black: #212529;
 
+    /* Custom Bloque Styles */
+    --shadow-unam: 0 10px 15px -3px rgba(30, 60, 112, 0.2), 0 4px 6px -4px rgba(30, 60, 112, 0.1);
 }
 
 
