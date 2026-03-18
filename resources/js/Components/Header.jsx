@@ -51,8 +51,8 @@ export default function Header() {
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
                                 className={`flex items-center gap-3 transition-all px-3 py-2 rounded-2xl border active:scale-95 group ${isOpen
-                                        ? 'bg-white/20 border-white/40 shadow-lg shadow-black/20'
-                                        : 'bg-white/5 border-white/10 hover:bg-white/15'
+                                    ? 'bg-white/20 border-white/40 shadow-lg shadow-black/20'
+                                    : 'bg-white/5 border-white/10 hover:bg-white/15'
                                     }`}
                             >
                                 <div className="hidden md:block text-right">
