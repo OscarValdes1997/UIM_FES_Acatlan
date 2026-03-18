@@ -3,15 +3,15 @@ import React from 'react';
 export default function PurposeSection() {
     return (
         <section className="bg-unam-blue text-white rounded-xl p-6 lg:p-10 shadow-unam overflow-hidden relative">
-            {/* Background Accent */}
+            {/* Acento de Fondo */}
             <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-unam-gold rounded-full blur-3xl opacity-20"></div>
-            
+
             <div className="flex flex-col lg:flex-row gap-8 relative z-10">
                 <div className="flex-1">
                     <h2 className="text-unam-gold text-2xl md:text-3xl font-black mb-6 uppercase tracking-tight">
                         UIM — Propósito de la Investigación
                     </h2>
-                    
+
                     <p className="text-gray-200 leading-relaxed mb-8 text-lg">
                         La Facultad de Estudios Superiores Acatlán, como entidad académica de la Universidad Nacional Autónoma de México, desarrolla actividades de investigación orientadas al fortalecimiento de la vida académica, promoviendo la generación de conocimiento y su integración con las funciones sustantivas de la Universidad.
                     </p>
@@ -57,10 +57,10 @@ export default function PurposeSection() {
                 <div className="lg:w-1/3 flex items-center justify-center">
                     <div className="relative group">
                         <div className="absolute inset-0 bg-unam-gold rounded-xl rotate-3 group-hover:rotate-0 transition-transform"></div>
-                        <img 
-                            src="https://via.placeholder.com/400x500/FFFFFF/1E3C70?text=Investigación+UIM" 
-                            alt="Investigación UIM" 
-                            className="relative rounded-xl shadow-2xl transition-transform group-hover:-translate-y-2 group-hover:-translate-x-2 grayscale group-hover:grayscale-0 duration-500"
+                        <img
+                            src="/carrucel_dashboard/investigacion.jpg"
+                            alt="Investigación UIM"
+                            className="relative rounded-xl shadow-2xl transition-transform group-hover:-translate-y-2 group-hover:-translate-x-2 group-hover:grayscale-0 duration-500"
                         />
                     </div>
                 </div>

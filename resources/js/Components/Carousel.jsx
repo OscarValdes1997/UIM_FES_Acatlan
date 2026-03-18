@@ -2,15 +2,15 @@ import React, { useState, useEffect } from 'react';
 
 const slides = [
     {
-        image: 'https://via.placeholder.com/1200x400/1E3C70/FFFFFF?text=UIM+FES+Acatlán',
+        image: '/carrucel_dashboard/img1.jpg',
         title: 'UIM FES ACATLÁN',
     },
     {
-        image: 'https://via.placeholder.com/1200x400/BB8800/FFFFFF?text=Carrusel+de+Fotos',
+        image: '/carrucel_dashboard/img2.jpg',
         title: 'CARRUSEL DE FOTOS',
     },
     {
-        image: 'https://via.placeholder.com/1200x400/212529/FFFFFF?text=Prueba+de+Transición',
+        image: '/carrucel_dashboard/img3.jpg',
         title: 'PRUEBA DE TRANSICIÓN',
     },
 ];
@@ -49,7 +49,7 @@ export default function Carousel() {
                 </div>
             ))}
 
-            {/* Indicators */}
+            {/* Indicadores */}
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
                 {slides.map((_, index) => (
                     <button
@@ -61,7 +61,7 @@ export default function Carousel() {
                 ))}
             </div>
 
-            {/* Controls */}
+            {/* Controles */}
             <button
                 onClick={prevSlide}
                 className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
